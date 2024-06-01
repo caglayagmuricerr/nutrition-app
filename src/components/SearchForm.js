@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-const SearchForm = ({ setQuery }) => {
+const SearchForm = ({ onQuerySubmit }) => {
   const [inputValue, setInputValue] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setQuery(inputValue);
+    onQuerySubmit(inputValue);
     setInputValue('');
   };
 
