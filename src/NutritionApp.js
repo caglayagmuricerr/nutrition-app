@@ -16,7 +16,7 @@ const NutritionApp = () => {
   return (
     <div>
       <h1>Nutrition Info</h1>
-      <SearchForm onQuerySubmit={handleQuerySubmit} />
+      <SearchForm onQuerySubmit={handleQuerySubmit} /> 
       {queries.map((query, index) => (
         <NutritionData key={index} query={query} />
       ))}
